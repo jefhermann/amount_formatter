@@ -1,7 +1,8 @@
 name: amount_formatter
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/agnamc9/amount_formatter
+repository: https://github.com/agnamc9/amount_formatter
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
