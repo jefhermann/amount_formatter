@@ -16,16 +16,4 @@ class AmountFormatter {
     }
     return currency.isEmpty ? newString : newString + ' ' + currency;
   }
-  
-  String formatAmountDouble(String amount) {
-  final chars = amount.split('.');
-  final charsfirst = chars[0].split('');
-  String newString = '';
-  for (int i = charsfirst.length - 1; i >= 0; i--) {
-    if ((charsfirst.length - 1 - i) % 3 == 0 && i != charsfirst.length - 1)
-      newString = ' ' + newString;
-    newString = charsfirst[i] + newString;
-  }
-  return newString + "." + chars[1];
-}
 }
